@@ -6,12 +6,8 @@ namespace Celeste {
 
         private static float anxiety = 0f;
         
-        [MonoModReplace]
         public new static float Anxiety {
-            get 
-            {
-                return anxiety;
-            }
+            [MonoModReplace]
             set 
             {
                 anxiety = value;

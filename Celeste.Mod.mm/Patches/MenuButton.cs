@@ -12,8 +12,8 @@ namespace Celeste {
         private bool selected;
         private Tween tween;
 
-        [MonoModReplace]
-        public new Color SelectionColor { 
+        public new Color SelectionColor {
+            [MonoModReplace]
             get 
             {
                 if (selected) {
